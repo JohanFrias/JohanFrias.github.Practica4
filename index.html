@@ -1,38 +1,156 @@
 <!DOCTYPE html>
+
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Pagina Personal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Profe</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
-    <body style = "background-color:bisque">
-        <h1><strong>Pagina Personal</strong></h1><br>
-        <h3><em>Su servidor:</em></h3>
-        <img src="yo123.jpeg" style="width: 50%; height: auto;"><br>
-        <p><strong>Nombre:</strong> Esbenni Johan Frias Morel</p><br>
-        <p><strong>Matricula:</strong> 100621819</p><br>
-        <p><strong>Carrera:</strong> Licenciatura en Informatica</p><br>
 
-        <h3><em>Bienvenidos~</em></h3>
-        <P>Soy estudiante de Licenciatura en Informatica y actualmente estoy dando mis primeros pasos en el mundo de la programacion y el desarrollo de software.
-             Aunque todavia estoy aprendiendo, me interesa conocer cada vez mas sobre la tecnologia y descubrir oomo puedo utilizarla para crear soluciones y desarrollar nuevos proyectos.
-             Mi objetivo es continuar desarrollando mis conocimientos y habilidades en informatica, adquirir experiencia y, con el tiempo, poder participar en proyectos cada vez mas completos.
-            </P>
-        
-        <p><strong>Asignaturas inscritas 2026-02:</strong></p>
-        <ul>
-            <li>Analisis y Diseños de Sistema</li>
-            <li>Base de Datos II</li>
-            <li>Lenguaje de Programacion</li>
-            <li>Laboratorio de Lenguaje de Programacion</li>
-        </ul>
+<body>
 
-        <p><strong>Horario de clases:</strong></p>
-        <ul>
-        <li><strong>Lunes:</strong> Analisis y Diseños de Sistema — 19:00 - 21:00</li>
-        <li><strong>Miercoles:</strong> Lab. Lenguaje de Programacion III — 7:00 - 9:00 / Base de Datos II — 14:00 - 16:00</li>
-        <li><strong>Sabado:</strong> Lenguaje de Programacion III — 8:00 - 12:00 / Analisis y Diseños de Sistema — 18:00 - 20:00</li>
-    </ul>
-        <h4>Contacto</h4>
-        <p><strong>Correo: </strong> esbenni22@gmail.com</p>
-    </body>
+    <div class="banner" id="inicio">
+        <h1 id="titulo">Papeleria Y Merceria La Profe</h1>
+    </div>
+
+          Menu dinamico
+    <nav class="menu-navegacion">
+        <ul id="menu"></ul>
+    </nav>
+
+    <section class="administrar-menu">
+
+    <h2>Administrar menú</h2>
+
+    <form id="formMenu">
+
+        <input
+            type="text"
+            id="nombreMenu"
+            placeholder="Nombre de la opcion"
+            required
+        >
+
+        <input
+            type="text"
+            id="enlaceMenu"
+            placeholder="Enlace, ejemplo: #contacto"
+            required
+        >
+
+        <button type="submit">
+            Agregar opción
+        </button>
+
+    </form>
+
+    <p id="mensajeMenu"></p>
+
+    <div id="listaOpciones"></div>
+
+    </section>
+
+    <h3 id="slogan">Todo lo que necesitas, en un solo lugar.</h3>
+
+    <hr>
+
+    <div class="galeria">
+        <img src="imagenes/costura.jpg"
+             alt="Materiales de costura y merceria">
+
+        <img src="imagenes/papeles.png"
+             alt="Lapices y papeles de colores">
+
+        <img src="imagenes/mostacilla.jpg"
+             alt="Mostacilla">
+    </div>
+
+    <hr>
+
+    <h2 id="productos">Productos y Servicios</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <h3>Papeleria</h3>
+            <p>Lapices, papeles y materiales escolares.</p>
+        </div>
+
+        <div class="producto">
+            <h3>Mercería</h3>
+            <p>Materiales para costura y manualidades.</p>
+        </div>
+
+        <div class="producto">
+            <h3>Costura</h3>
+            <p>Articulos y materiales para tus proyectos de costura.</p>
+        </div>
+
+        <div class="producto">
+            <h3>Bisuteria</h3>
+            <p>Mostacillas y materiales para crear accesorios.</p>
+        </div>
+
+        <div class="producto">
+            <h3>Copias e impresion</h3>
+            <p>Servicio de copias e impresion de documentos.</p>
+        </div>
+
+        <div class="producto">
+            <h3>Plastificación</h3>
+            <p>Proteccion y plastificacion de documentos.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 id="contacto">Contactenos y realice su pedido</h2>
+
+    <div class="contenedor-servicios">
+
+        <div class="servicio">
+            <h2>Información de Contacto</h2>
+            <p>Contactenos via WhatsApp</p>
+            <a href="https://wa.me/8095081967" target="_blank">
+                809-508-1967
+            </a>
+        </div>
+
+        <div class="servicio">
+
+            <h2>Realizar Pedido</h2>
+
+            <form action="procesar.php" method="post">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br>
+
+                <label for="detalles">Detalles del pedido:</label>
+                <input type="text" id="detalles" name="detalles" required>
+                <br>
+
+                <button type="submit">Enviar pedido</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+```
+
 </html>
