@@ -1,0 +1,56 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "nombre": "Inicio",
+            "enlace": "#inicio"
+        },
+        {
+            "id": 2,
+            "nombre": "Productos",
+            "submenu": [
+                {
+                    "id": 3,
+                    "nombre": "Papelería",
+                    "enlace": "#productos"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Merceria",
+                    "enlace": "#productos"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Costura",
+                    "enlace": "#productos"
+                },
+                {
+                    "id": 6,
+                    "nombre": "Bisuteria",
+                    "enlace": "#productos"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "nombre": "Servicios",
+            "submenu": [
+                {
+                    "id": 8,
+                    "nombre": "Copias e impresion",
+                    "enlace": "#productos"
+                },
+                {
+                    "id": 9,
+                    "nombre": "Plastificacion",
+                    "enlace": "#productos"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "nombre": "Contacto",
+            "enlace": "#contacto"
+        }
+    ]
+}
